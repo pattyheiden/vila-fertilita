@@ -1,6 +1,6 @@
 import { NextApiResponse } from 'next';
 
-const SitemapCabanhaUrl = () => {};
+const SitemapCabanha = () => {};
 
 const generateSitemap = () => {   
   const baseUrl = 'https://www.cabanhavilafertilita.com.br/';

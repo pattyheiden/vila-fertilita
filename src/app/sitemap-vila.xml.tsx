@@ -1,6 +1,6 @@
 import { NextApiResponse } from 'next';
 
-const SitemapVilaUrl = () => {};
+const SitemapVila = () => {};
 
 const generateSitemap = () => {   
   const baseUrl = 'https://www.vilafertilita.com.br/';

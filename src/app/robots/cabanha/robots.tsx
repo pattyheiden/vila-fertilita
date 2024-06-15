@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: ['/'],
       disallow: '',
     },
-    sitemap: 'https://www.cabanhavilafertilita.com.br/sitemap.xml.tsx'
+    sitemap: 'https://www.cabanhavilafertilita.com.br/cabanha-sitemap.xml.tsx'
   }
 }

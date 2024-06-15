@@ -32,6 +32,8 @@ export default function RootLayout({
       <GTM />
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="Animais e embriões Angus. Genética superior para elevar a qualidade do seu rebanho." />
+      <meta name="google-site-verification" content="OPErGaVRymxm0HFJHrj6AiLWwsl_ozVDSGVcQ_C5pBA" />
       </head>
       <body className={libre.className}>
       <GTMIframe />

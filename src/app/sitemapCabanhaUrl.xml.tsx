@@ -1,8 +1,13 @@
 import { NextApiResponse } from 'next';
 
-const generateSitemap = (baseUrl: string) => {
+const SitemapCabanhaUrl = () => {};
+
+const generateSitemap = () => {   
+  const baseUrl = 'https://www.cabanhavilafertilita.com.br/';
+
   const pages = [
     '/',
+    '/orcamento/',
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -24,21 +29,11 @@ const generateSitemap = (baseUrl: string) => {
   return sitemap;
 };
 
-const SitemapXml = async (req: any, res: NextApiResponse) => {
-  const host = req.headers.host;
-  let baseUrl;
+const SitemapXml = () => {};
 
-  if (host.includes('vilafertilita.com.br')) {
-    baseUrl = 'https://www.vilafertilita.com.br';
-  } else if (host.includes('cabanhavilafertilita.com.br')) {
-    baseUrl = 'https://www.cabanhavilafertilita.com.br';
-  } else {
-    // Handle default or error case
-    baseUrl = 'https://www.vilafertilita.com.br'; // Default to one of the URLs
-  }
-
+SitemapXml.getInitialProps = async ({ res }: { res: NextApiResponse }) => {
   res.setHeader('Content-Type', 'text/xml');
-  res.write(generateSitemap(baseUrl));
+  res.write(generateSitemap());
   res.end();
 };
 

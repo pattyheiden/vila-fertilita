@@ -1,16 +1,14 @@
 import { NextApiResponse } from 'next';
 
-const SitemapVila = () => {};
-
-const generateSitemap = () => {   
-  const baseUrl = 'https://www.vilafertilita.com.br/';
+const generateSitemap = () => {
+  const baseUrls = ['https://www.vilafertilita.com.br', 'https://www.caanhavilafertilita.com.br'];
 
   const pages = [
     '/',
-    '/orcamento/',
   ];
 
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+  const sitemaps = baseUrls.map((baseUrl) => {
+    return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${pages
     .map(
@@ -25,15 +23,19 @@ const generateSitemap = () => {
     )
     .join('')}
 </urlset>`;
+  });
 
-  return sitemap;
+  return sitemaps;
 };
 
 const SitemapXml = () => {};
 
 SitemapXml.getInitialProps = async ({ res }: { res: NextApiResponse }) => {
   res.setHeader('Content-Type', 'text/xml');
-  res.write(generateSitemap());
+  const sitemaps = generateSitemap();
+  sitemaps.forEach((sitemap) => {
+    res.write(sitemap);
+  });
   res.end();
 };
 

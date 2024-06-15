@@ -11,7 +11,7 @@ const libre = Libre_Franklin({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Vila Fertilitá",
-  keywords: 'cabanha, reprodutor de angus, gado angus',
+  keywords: 'cabanha, reprodutor de angus, gado angus, embriões angus, angus black, angus red, genetica, embriao, venda de embrião angus, venda de gado angus',
   openGraph: 
     {
       images: 'http://cabanhavilafertilita.com.br/og.png',    

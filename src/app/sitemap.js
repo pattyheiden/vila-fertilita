@@ -1,5 +1,5 @@
-import { SitemapStream, streamToPromise } from 'sitemap';
-import { Readable } from 'stream';
+const { SitemapStream, streamToPromise } = require('sitemap');
+const { Readable } = require('stream');
 
 async function generateSitemap(domain) {
   const links = [

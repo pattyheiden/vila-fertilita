@@ -1,4 +1,4 @@
-import {generateSitemap} from '../sitemap'
+import {generateSitemap} from '../../../sitemap'
 
 export default async function handler(req, res) {
   const host = req.headers.host;

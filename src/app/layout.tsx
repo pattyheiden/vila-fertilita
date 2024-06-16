@@ -33,6 +33,7 @@ export default function RootLayout({
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Animais e embriões Angus. Genética superior para elevar a qualidade do seu rebanho." />
+      <meta name="keywords" content="cabanha, reprodutor de angus, gado angus, embriões angus, angus black, angus red, genetica, embriao, venda de embrião angus, venda de gado angus" />
       <meta name="google-site-verification" content="OPErGaVRymxm0HFJHrj6AiLWwsl_ozVDSGVcQ_C5pBA" />
       <meta name="google-site-verification" content="tXzoUeNPSjofmVccQLukYso_m1_mZBxlweVL1jeRW94" />
       </head>
